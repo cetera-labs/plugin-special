@@ -1,0 +1,142 @@
+.special-panel-wrapper {
+    position: fixed;
+    z-index: 1000;
+}
+
+.special .special-panel {
+    height: 56px;
+    font-size: 17px;
+    color: #000;
+    top: 0;
+    width: 1100px;
+    border: 1px solid #000;
+    background: #fff!important;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+} 
+
+.special .special-panel.pulldown {
+    height: auto;  
+    text-align: left;    
+} 
+
+.special .special-panel.pulldown .heading {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.special .special-panel.pulldown .buttons {
+    text-align: right;
+}
+
+.special .special-panel span {
+    padding-left: 10px;
+}
+
+.special .special-panel .btn {
+    border: 1px solid #000;
+    min-width: 32px;
+    height: 32px;
+    line-height: 22px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px 7px;
+}
+
+.special .special-panel .btn.wide {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+}
+
+.special .special-panel .btn.active {
+    border-width: 5px;
+    padding: 0 2px;
+}
+
+.special *, .special *::before {
+    background: none!important;
+    content: none!important;
+}
+
+.special .parallax-mirror {
+    display: none;
+}
+
+.special img {
+    visibility: hidden;
+}
+
+body.fontface-times, .special .special-panel .btn.fontface-times {
+    font-family: "Times New roman", serif!important;
+}
+
+body.fontface-arial, .special .special-panel .btn.fontface-arial {
+    font-family: "Arial", sanserif!important;
+}
+
+body.fontspacing-normal, .special .special-panel .btn.font-spacing.fontspacing-normal {
+    letter-spacing: 2px!important;
+}
+
+body.fontspacing-small, .special .special-panel .btn.font-spacing.fontspacing-small {
+    letter-spacing: 0px!important;
+}
+
+body.fontspacing-big, .special .special-panel .btn.font-spacing.fontspacing-big {
+    letter-spacing: 5px!important;
+}
+
+.special.fontsize-small, .special .special-panel .font-size.fontsize-small {
+    font-size: 12px;
+}
+
+.special.fontsize-normal, .special .special-panel .font-size.fontsize-normal {
+    font-size: 16px;
+}
+
+.special.fontsize-big, .special .special-panel .font-size.fontsize-big {
+    font-size: 22px;
+}
+
+.special.images-on img {
+    visibility: visible;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}
+
+.special.color-1 *, .special.color-1 *::after, .special .special-panel .btn.color-1 {
+    color: #000!important;
+    border-color: #000!important;
+    background-color: #FFF!important;
+}
+
+.special.color-2 *, .special.color-2 *::after, .special.color-2, .special .special-panel .btn.color-2 {
+    color: #fff!important;
+    border-color: #fff!important;
+    background-color: #000!important;
+}
+
+.special.color-3 *, .special.color-3 *::after, .special.color-3, .special .special-panel .btn.color-3 {
+    color: #063462!important;
+    border-color: #063462!important;
+    background-color: #9dd1ff!important;
+}
+
+.special.color-4 *, .special.color-4 *::after, .special.color-4, .special .special-panel .btn.color-4 {
+    color: #4d4b43!important;
+    border-color: #4d4b43!important;
+    background-color: #f7f3d6!important;
+}
+
+.special.color-5 *, .special.color-5 *::after, .special.color-5, .special .special-panel .btn.color-5 {
+    color: #a9e44d!important;
+    border-color: #a9e44d!important;
+    background-color: #3b2716!important;
+}

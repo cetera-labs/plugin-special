@@ -1,0 +1,29 @@
+{
+    "name": "cetera-labs/plugin-special",
+    "description": "Версия для слабовидящих",
+    "type": "cetera-cms-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roman Romanov",
+            "email": "nicodim@mail.ru",
+            "role": "Author"
+        }
+    ],
+    "require": {
+    },
+    
+    "minimum-stability": "dev",
+    
+    "autoload": {
+        "psr-0": { 
+			"Special\\": "classes/"
+		}
+    },
+
+    "extra": {
+        "name": "special",
+        "title": "Версия для слабовидящих",
+        "description": ""
+    }
+}

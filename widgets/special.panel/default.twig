@@ -1,0 +1,53 @@
+{% if widget.isSpecialMode() %}
+    <div class="special-panel-wrapper">
+        <div class="special-panel">
+            Размер шрифта:
+            <a class="btn fontsize fontsize-small" data-class="fontsize-small" href="#">A</a>
+            <a class="btn fontsize fontsize-normal" data-class="fontsize-normal" href="#">A</a>
+            <a class="btn fontsize fontsize-big" data-class="fontsize-big" href="#">A</a>
+            
+            <span>Цвета сайта:</span>
+            <a class="btn colors color-1" data-class="color-1" href="#">Ц</a>
+            <a class="btn colors color-2" data-class="color-2" href="#">Ц</a>
+            <a class="btn colors color-3" data-class="color-3" href="#">Ц</a>
+            
+            <span>Изображения:</span>
+            <a class="btn images" href="#">ВКЛ</a>
+            <span>&nbsp;</span>
+            <a class="btn" href="/search/">Поиск</a>
+            <span>&nbsp;</span>
+            <a class="btn setup" href="#">Настройки</a>
+            <span>&nbsp;</span>
+            <a class="btn" href="{{ widget.urlNormalMode() }}">Обычная версия</a>
+        </div>
+        <div class="special-panel pulldown" style="display: none">
+            <p class="heading">Настройки шрифта:</p>
+            <p>
+                Выберите шрифт 
+                <a class="btn fontface fontface-arial" data-class="fontface-arial" href="#">Arial</a>
+                <a class="btn fontface fontface-times" data-class="fontface-times" href="#">Times New Roman</a>
+            </p>
+            <p>
+                Интервал между буквами (Кернинг): 
+                <a class="btn fontspacing fontspacing-small" data-class="fontspacing-small" href="#">Стандартный</a>
+                <a class="btn fontspacing fontspacing-normal" data-class="fontspacing-normal" href="#">Средний</a>
+                <a class="btn fontspacing fontspacing-big" data-class="fontspacing-big" href="#">Большой</a>
+            </p>            
+            <p class="heading">Выбор цветовой схемы:</p>
+            <p>
+                <a class="btn wide colors color-1" data-class="color-1" href="#">Черным по белому</a>
+                <a class="btn wide colors color-2" data-class="color-2" href="#">Белым по черному</a>
+                <a class="btn wide colors color-3" data-class="color-3" href="#">Темно-синим по голубому</a>    
+                <a class="btn wide colors color-4" data-class="color-4" href="#">Коричневым по бежевому</a>                   
+                <a class="btn wide colors color-5" data-class="color-5" href="#">Зеленым по темно-коричневому</a>  
+            </p>
+        
+            <p class="buttons">
+                <a class="btn clear" href="#">Вернуть стандартные настройки</a>
+                <a class="btn setup" href="#">Закрыть панель</a>
+            </p>
+        </div>
+    </div>
+{% else %}
+
+{% endif %}
