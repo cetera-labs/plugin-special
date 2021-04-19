@@ -5,7 +5,7 @@ class Panel extends \Cetera\Widget\Templateable
 {
 
     protected $_params = array(
-		'css' => '/plugins/special/css/special.css',
+		'css' => '/cms/plugins/special/css/special.css',
         'url_normal' => false,
     ); 
 	
@@ -14,7 +14,7 @@ class Panel extends \Cetera\Widget\Templateable
 	{
          if ($this -> isSpecialMode()) {
             $this->application->addCss($this->getParam('css'));
-            $this->application->addScript('/plugins/special/js/special.js');
+            $this->application->addScript('/cms/plugins/special/js/special.js');
          }
 	}		
 
