@@ -20,7 +20,7 @@ class Panel extends \Cetera\Widget\Templateable
 
 	public function isSpecialMode()
 	{
-        if (strstr(getenv('SERVER_NAME'),'special.')) {
+        if (strstr(getenv('HTTP_HOST'),'special.')) {
            return true;
         }
         else {
