@@ -9,20 +9,19 @@ class Panel extends \Cetera\Widget\Templateable
         'url_normal' => false,
     ); 
 	
-	public $coupon_error = null;
-
+	//public $coupon_error = null;
 	protected function init()
 	{
-        if ($this->isSpecialMode()) {
+         if ($this -> isSpecialMode()) {
+            $this->application->addCss($this->getParam('css'));
             $this->application->addScript('/plugins/special/js/special.js');
-        }
-		$this->application->addCSS( $this->getParam('css') );
+         }
 	}		
 
 	public function isSpecialMode()
 	{
-        if (substr(getenv('SERVER_NAME'),0,8) == 'special.') {
-            return true;
+        if (strstr(getenv('SERVER_NAME'),'special.')) {
+           return true;
         }
         else {
             return false;
