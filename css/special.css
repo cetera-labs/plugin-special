@@ -1,14 +1,15 @@
 .special-panel-wrapper {
-    position: fixed;
+    position: sticky;
+    top: 0;
     z-index: 1000;
 }
 
 .special .special-panel {
-    height: 56px;
+    height: auto;
     font-size: 17px;
     color: #000;
     top: 0;
-    width: 1100px;
+    max-width: 1100px;
     border: 1px solid #000;
     background: #fff!important;
     margin: 0 auto;
