@@ -25,7 +25,7 @@ class Panel extends \Cetera\Widget\Templateable
 
 	public function isSpecialMode()
 	{
-        if ($this->isCookieMode()) {
+        if (isset($_COOKIE[self::COOKIE_KEY]) && $this->isCookieMode()) {
             return $_COOKIE[self::COOKIE_KEY] === 'Y';
         }
         if (strstr(getenv('HTTP_HOST'),'special.')) {
